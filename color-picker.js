@@ -21,9 +21,9 @@ document.addEventListener("click", (event) => {
   // Save to clipboard 
   navigator.clipboard.writeText(`rgb(${red}, 0, ${blue})`);
   
-  // Display saved! 
+  // Display copied! 
   let paragraph = document.querySelector("#description");
-  paragraph.innerText = "Saved to clipboard!";
+  paragraph.innerText = "Copied to clipboard!";
   let descriptionContainer = document.querySelector("#description-container");
   descriptionContainer.style.backgroundColor = "rgba(255,255,255,0.2)";
   
@@ -36,3 +36,4 @@ document.addEventListener("click", (event) => {
   }, 2000);
   
 });
+
